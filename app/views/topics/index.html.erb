@@ -1,9 +1,8 @@
-<h1>Listing topics</h1>
-
+<div class="container">
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th><h3>Please Vote:</h3></th>
       <th></th>
       <th></th>
       <th></th>
@@ -13,10 +12,10 @@
   <tbody>
     <% @topics.each do |topic| %>
   <tr>
-    <td><%= link_to topic.title, topic %></td>
+    <td><div class="shop"><%= link_to topic.title, topic %></div></td>
     <td><%= pluralize(topic.votes.count, "vote") %></td>
     <td><%= button_to '+1', votes_path(topic_id: topic.id), method: :post %></td>
-    <td><%= link_to 'Delete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><div class="delete"><%= link_to 'Delete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></div></td>
   </tr>
 <% end %>
   </tbody>
@@ -24,4 +23,5 @@
 
 <br>
 
-<%= link_to 'New Topic', new_topic_path %>
+<div class="newtopic"><%= link_to 'New Shop', new_topic_path %></div>
+</div>
