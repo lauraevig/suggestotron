@@ -1,6 +1,9 @@
 <div class="container">
 <table>
   <thead>
+    <% flash.each do |name, msg| %>
+    <div class="message"><%= msg %></div>
+<% end %>
     <tr>
       <th><h3>Please Vote:</h3></th>
       <th></th>
