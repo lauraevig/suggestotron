@@ -69,6 +69,9 @@ tr:nth-child(even) {
 
 .message {
  margin-top: 50px; 
+ font-weight: bold;
+ color: #558C89;
+
 }
 .delete {background-color: #C63D0F;
   padding: 5px 8px;
@@ -83,7 +86,7 @@ tr:nth-child(even) {
 .newtopic {background-color: #C63D0F;
   padding: 5px;
   border-radius:5px;
-  width: 100px;
+  width: 70px;
   text-align: center;}
 .newtopic a {color: #fff;
   text-decoration: none;}
@@ -94,7 +97,7 @@ tr:nth-child(even) {
   margin-right: 5px;
   padding: 5px;
   border-radius:5px;
-  width: 100px;
+  width: 70px;
   text-align: center;}
 .back a {color: #fff;
   text-decoration: none;}
@@ -144,3 +147,5 @@ div {
     list-style: square;
   }
 }
+
+
